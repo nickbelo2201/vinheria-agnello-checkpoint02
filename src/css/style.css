@@ -1,0 +1,43 @@
+/* VARIAVEIS */
+
+:root {
+  --bg-header: #630D16;
+  --text-primary: #000;
+  --bg-main: #d1d1d6;
+  --logo-color: #E3D5CA;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+}
+
+body {
+  background-image: url(../assets/img1.avif);
+  background-repeat: no-repeat;  
+  background-size: cover;       
+  background-position: center;
+  min-height: 100vh;
+  color: var(--text-primary);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-header);
+  padding: 20px 5%;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.logo span {
+  color: var(--logo-color);
+  font-size: 1.7rem;
+}
+
