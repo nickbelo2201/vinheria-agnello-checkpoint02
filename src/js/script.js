@@ -1,3 +1,4 @@
+
 let cadastro = prompt("digite seu nome:");
 alert("Cadastro realizado! Veja os detalhes no console.");
 
@@ -123,9 +124,29 @@ function estoqueVinhoRose() {
     }
 }
 
+//funcoes para botoes
+function vinhosBotao(){
+    alert("Temos vinhos: Rosé, Tinto e Branco")
+}
+
+function tiposVinho(){
+    alert("VINHOS TINTO: Casillero del Diablo 1930, TerraNoble 1900, Luigi Bosca 2015,Cartuxa 2002, Vina Montes 2007.");
+    alert("VINHOS ROSÉ: Casa Valduga 1942, Aurora Rosé 1935, Arte Blend Rosé 2022, Casal Mendes 2020, Miolo Rosé 2021.");
+    alert("VINHOS BRANCO:  Casal Garcia 1829, Monte Agudo 1738, Garibaldi 2020, Santa Helena 2023, Gato Negro 2021");
+    // escolhaBotaoVinho = prompt("Qual a escolha?")
+}
 
 
 
+    
 
-
-
+// botoes
+document.getElementById("vinhos").addEventListener("click", function(e) {
+    e.preventDefault();
+    vinhosBotao();
+  })
+// botoes
+document.getElementById("cardapio").addEventListener("click", function(e) {
+    e.preventDefault(); 
+    tiposVinho();
+  })

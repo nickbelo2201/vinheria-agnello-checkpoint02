@@ -56,8 +56,7 @@ nav ul {
 nav ul li a {
   color: var(--text-primary);
   font-size: 1.5rem;
-  
-  /* text-decoration: none; */
+  text-decoration: none;
 }
 
 
