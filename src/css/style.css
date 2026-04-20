@@ -5,6 +5,7 @@
   --text-primary: #000;
   --bg-main: #d1d1d6;
   --brand-color: #f58b1b;
+  --text-secondary: #fff;
 }
 
 *{
@@ -56,3 +57,24 @@ nav ul li a:hover {
   color: var(--brand-color)
 }
 
+h2 {
+  color: var(--text-secondary);
+  font-size: 1.9rem;
+}
+
+#container {
+  padding: 40px 15%;
+  margin-top: 20px;
+}
+.card {
+  margin-top: 15px;
+  display: grid;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  border-radius: 10px;
+}
+
+.card div {
+  font-size: 25px;
+  padding: 44px;
+}
