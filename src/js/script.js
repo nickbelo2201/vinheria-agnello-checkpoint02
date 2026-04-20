@@ -1,10 +1,9 @@
-// Interação do Usuário(cadastro)
 let cadastro = prompt("digite seu nome:");
 alert("Cadastro realizado! Veja os detalhes no console.");
 
 console.log("Cadastro realizado!");
 function normalizar(texto) {
-  return texto.toLowerCase().trim();
+  return texto ? texto.toLowerCase().trim() : "";
 }
 
 // Variáveis para os tipos de vinhos
@@ -24,8 +23,10 @@ let terraNoble = 'TerraNoble 1900';
 let luigiBosca = 'Luigi Bosca 2015';
 let cartuxa = 'Cartuxa 2002';
 let vinaMontes = 'Vina Montes 2007';
-print("Temos os seguintes vinhos tintos: Casillero del Diablo 1930, TerraNoble 1900, Vina Montes 2007, Luigi Bosca 2015 e Cartuxa 2002");
+
+alert("Temos os seguintes vinhos tintos: Casillero del Diablo 1930, TerraNoble 1900, Vina Montes 2007, Luigi Bosca 2015 e Cartuxa 2002");
 let escolha = prompt("Qual vinho tinto você deseja?");
+
     function estoqueVinhoTinto() {
     if (normalizar(escolha) == normalizar(casilleroDelDiablo)) {
     alert("O vinho escolhido foi Casillero del Diablo 1930, temos 10 unidades em estoque");
@@ -46,7 +47,8 @@ let escolha = prompt("Qual vinho tinto você deseja?");
     if (normalizar(escolha) == "sim") {
         escolhaTipoDeVinho();    
     }
-    }   
+    } 
+    estoqueVinhoTinto()  
     }
 }
 
@@ -57,8 +59,10 @@ let MonteAgudo = 'Monte Agudo 1738';
 let Garibaldi = 'Garibaldi 2020';
 let SantaHelena = 'Santa Helena 2023';
 let Gatonegro = 'Gato Negro 2021';
-print("Temos os seguintes vinhos brancos: Casal Garcia 1829, Monte Agudo 1738, Garibaldi 2020, Santa Helena 2023 e Gato Negro 2021");
+
+alert("Temos os seguintes vinhos brancos: Casal Garcia 1829, Monte Agudo 1738, Garibaldi 2020, Santa Helena 2023 e Gato Negro 2021");
 let escolha = prompt("Qual vinho branco você deseja?");
+
     function estoqueVinhoBranco() {
     if (normalizar(escolha) == normalizar(CasalGarcia)) {
     alert("O vinho escolhido foi Casal Garcia 1829, temos 10 unidades em estoque");
@@ -80,18 +84,21 @@ let escolha = prompt("Qual vinho branco você deseja?");
         escolhaTipoDeVinho();    
     }
     }   
+    estoqueVinhoBranco()
     }
 }
 
 function escolhaVinhoRose() {
 let CasaValduga = 'Casa Valduga 1942';
-let AuroraRosé = 'Aurora Rosé 1935';
+let AuroraRose = 'Aurora Rosé 1935';
 let ArteBlendRose = 'Arte Blend Rosé 2022';
 let CasalMendes = 'Casal Mendes 2020';
-let MioloRosé = 'Miolo Rosé 2021';
-print("Temos os seguintes vinhos rosé: Casa Valduga 1942, Aurora Rosé 1935, Arte Blend Rosé 2022, Casal Mendes 2020 e Miolo Rosé 2021");
+let MioloRose = 'Miolo Rosé 2021';
+
+alert("Temos os seguintes vinhos rosé: Casa Valduga 1942, Aurora Rosé 1935, Arte Blend Rosé 2022, Casal Mendes 2020 e Miolo Rosé 2021");
 let escolha = prompt("Qual vinho rosé você deseja?");
-    function estoqueVinhoRose() {
+
+function estoqueVinhoRose() {
     if (normalizar(escolha) == normalizar(CasaValduga)) {
     alert("O vinho escolhido foi Casa Valduga 1942, temos 10 unidades em estoque");
     } else if (normalizar(escolha) == normalizar(AuroraRosé)) {
@@ -112,5 +119,13 @@ let escolha = prompt("Qual vinho rosé você deseja?");
         escolhaTipoDeVinho();    
     }
     }   
+    estoqueVinhoRose()
     }
 }
+
+
+
+
+
+
+
