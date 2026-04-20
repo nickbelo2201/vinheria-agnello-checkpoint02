@@ -20,7 +20,7 @@ body {
   background-repeat: no-repeat;  
   background-size: cover;       
   background-position: center;
-  min-height: 100vh;
+  min-height: 75vh;
   color: var(--text-primary);
 }
 
@@ -34,24 +34,32 @@ header {
 
 .logo {
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
 }
 
 .logo span {
   color: var(--brand-color);
-  font-size: 1.7rem;
+  font-size: 1.9rem;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 30px;
+  align-items: center;
+  
+}
+.carrinho{
+  font-size: 1.5rem;
 }
 
 nav ul li a {
   color: var(--text-primary);
+  font-size: 1.5rem;
+  
   /* text-decoration: none; */
 }
+
 
 nav ul li a:hover {
   color: var(--brand-color)
@@ -59,12 +67,18 @@ nav ul li a:hover {
 
 h2 {
   color: var(--text-secondary);
-  font-size: 1.9rem;
+  font-size: 1.8rem;
+  text-align: center;
+  /* padding:20px; */
+  
+
 }
 
 #container {
-  padding: 40px 15%;
+  padding: 30px 20%;
   margin-top: 20px;
+  text-align: center;
+  
 }
 .card {
   margin-top: 15px;
@@ -74,7 +88,9 @@ h2 {
   border-radius: 10px;
 }
 
-.card div {
+.card div{
   font-size: 25px;
-  padding: 44px;
+  padding: 15px;
+  font-size:1.5; 
 }
+
