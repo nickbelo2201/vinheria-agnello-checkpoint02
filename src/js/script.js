@@ -1,10 +1,9 @@
-// Interação do Usuário(cadastro)
 let cadastro = prompt("digite seu nome:");
 alert("Cadastro realizado! Veja os detalhes no console.");
 
 console.log("Cadastro realizado!");
 function normalizar(texto) {
-  return texto.toLowerCase().trim();
+  return texto ? texto.toLowerCase().trim() : "";
 }
 
 // Variáveis para os tipos de vinhos
@@ -46,7 +45,8 @@ let escolha = prompt("Qual vinho tinto você deseja?");
     if (normalizar(escolha) == "sim") {
         escolhaTipoDeVinho();    
     }
-    }   
+    } 
+    estoqueVinhoTinto()  
     }
 }
 
@@ -80,15 +80,16 @@ let escolha = prompt("Qual vinho branco você deseja?");
         escolhaTipoDeVinho();    
     }
     }   
+    estoqueVinhoBranco()
     }
 }
 
 function escolhaVinhoRose() {
 let CasaValduga = 'Casa Valduga 1942';
-let AuroraRosé = 'Aurora Rosé 1935';
+let AuroraRose = 'Aurora Rosé 1935';
 let ArteBlendRose = 'Arte Blend Rosé 2022';
 let CasalMendes = 'Casal Mendes 2020';
-let MioloRosé = 'Miolo Rosé 2021';
+let MioloRose = 'Miolo Rosé 2021';
 print("Temos os seguintes vinhos rosé: Casa Valduga 1942, Aurora Rosé 1935, Arte Blend Rosé 2022, Casal Mendes 2020 e Miolo Rosé 2021");
 let escolha = prompt("Qual vinho rosé você deseja?");
     function estoqueVinhoRose() {
@@ -112,5 +113,13 @@ let escolha = prompt("Qual vinho rosé você deseja?");
         escolhaTipoDeVinho();    
     }
     }   
+    estoqueVinhoRose()
     }
 }
+
+
+
+
+
+
+
