@@ -4,7 +4,7 @@
   --bg-header: #630D16;
   --text-primary: #000;
   --bg-main: #d1d1d6;
-  --logo-color: #E3D5CA;
+  --brand-color: #f58b1b;
 }
 
 *{
@@ -37,7 +37,22 @@ header {
 }
 
 .logo span {
-  color: var(--logo-color);
+  color: var(--brand-color);
   font-size: 1.7rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: var(--text-primary);
+  /* text-decoration: none; */
+}
+
+nav ul li a:hover {
+  color: var(--brand-color)
 }
 
