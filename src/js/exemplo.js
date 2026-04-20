@@ -83,7 +83,7 @@ let escolha = prompt("Qual vinho branco você deseja?");
     }
 }
 
-function escolhaVinhoRose() {
+escolhaVinhoRose() {
 let CasaValduga = 'Casa Valduga 1942';
 let AuroraRosé = 'Aurora Rosé 1935';
 let ArteBlendRose = 'Arte Blend Rosé 2022';
