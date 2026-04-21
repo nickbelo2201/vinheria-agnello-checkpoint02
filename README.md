@@ -67,5 +67,13 @@ Este projeto foi desenvolvido com o objetivo de praticar:
 
 Lógica de programação
 Organização de código
-Reutilização de funções
-Interação com o usuário
+
+👨‍💻 Autores do projeto
+
+Projeto desenvolvido por:
+
+Henry
+Matheus
+Leonardo Ursini
+Nicholas
+Gustavo Braga
