@@ -23,11 +23,11 @@ function classificarVinho(ano) {
     else return "Antigo";
 }
 
-function alertaEstoque(nome, ano, estoque) {
+    function alertaEstoque(nome, ano, estoque) {
     let classe = classificarVinho(ano);
-    let avisoEstoque = estoque <= 5 ? "ESTOQUE BAIXO!" : "";
-    alert(nome + " - " + estoque + " unidades em estoque" + avisoEstoque + "\nClassificação: " + classe);
-    console.log(nome + " - " + estoque + " unidades em estoque" + avisoEstoque + " | Classificação: " + classe);
+    let avisoEstoque = estoque <= 5 ? " ESTOQUE BAIXO!" : "";
+    alert(nome + " - " + estoque + " unidades em estoque" + avisoEstoque + " " + "\n Classificação: " + classe);
+    console.log(nome + " - " + estoque + " unidades em estoque" + "  " + avisoEstoque + " | Classificação: " + classe);
 }
 
 function getNomeVinho(categoria, posicao) {
